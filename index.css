@@ -389,11 +389,11 @@ button{
 .carousel-container {
     display: flex;
     position: relative;
-    margin-bottom: -53px;
+    margin-bottom: -40px;
 }
 
 .scroll-container{
-    margin-top: 8px;
+    margin-top: 10px;
     margin-bottom: 8px;
     display: inline-block;
     width: 100%;
@@ -419,12 +419,20 @@ button{
     width: 100%;
     height: 100%;
 }
+
 .scrolling-slide img{
+    position: relative;
     width: 400px;
     height: 100%;
     margin-right: 8px;
     margin-left: 8px;
 }
+.scroll-overlay{
+    position: absolute;
+    
+
+}
+
 .strbtn{
     position: absolute;
     left: 5%;
@@ -436,17 +444,19 @@ button{
     color: #000000;
     background: white;
     font-size: 14px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
    
 }
 
 .dot {
     height: 8px;
     width: 8px;
-    margin: 0 4px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 15px;
     background-color: #9c9c9c;
     border-radius: 50%;
     display: inline-block;
@@ -459,6 +469,7 @@ button{
 .footer{
     background-color: #f8f8f8;
     margin-top: 3.6rem;
+    width: 100%;
 }
 
 .footer-container{
@@ -482,5 +493,5 @@ li{
 }
 
 .column-one{
-    margin-right: 1.5rem;
+    margin-right: 1rem;
 }
