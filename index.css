@@ -15,6 +15,11 @@ header{
     background-color: rgba(255, 255, 255, 0.941);
     z-index: 1;
 }
+
+.burger{
+    display: none;
+}
+
 img{
     vertical-align: middle;
 }
@@ -24,7 +29,7 @@ a{
     color: black;
 }
 
-.nav-bar{   
+.burger-menu{   
     display: flex;
     top: 0;
     justify-content: space-around;
@@ -488,10 +493,241 @@ button{
     display: flex;
 }
 
+.mobile-links{
+    display: none;
+}
+
 li{
     margin-bottom: 8px;
 }
 
 .column-one{
     margin-right: 1rem;
+}
+
+
+
+@media (max-width:576px){
+
+    .body{
+        overflow-x: hidden;
+    }
+    .main-banner, .second-banner, .third-banner{
+        width: 100%;
+        margin: 0;
+        padding: 4px;
+    }
+
+    .text-overlay h1,.second-text-overlay h1,
+    .fourth-text-overlay-one h1, .fourth-text-overlay-two h1,
+    .fifth-text-overlay-one h1, .fifth-text-overlay-two h1, 
+    .sixth-text-overlay-one h1, .sixth-text-overlay-two h1{
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .text-overlay h2,.second-text-overlay h2,
+    .fourth-text-overlay-one h2, .fourth-text-overlay-two h2,
+    .fifth-text-overlay-one h2, .fifth-text-overlay-two h2, 
+    .sixth-text-overlay-one h2, .sixth-text-overlay-two h2{
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 12px;
+  margin: 1px 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+    }
+
+    .learnmore, .preorder{
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .second-buttons, .third-buttons, .main-buttons{
+        left: 30%;
+    }
+
+    .fourth-banner,.fifth-banner,.sixth-banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .inner-one,.inner-two{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .fifth-text-overlay-one{
+        position: absolute; /* Allows the text to be positioned over the image */
+        bottom: 90%; /* Center the text vertically */
+        left: 49%; /* Center the text horizontally */ 
+        transform: translate(-50%, -50%); 
+    }
+
+    .fifth-text-overlay-one h2{
+        display: none;
+    }
+    
+    .fifth-text-overlay-two{ 
+        position: absolute; /* Allows the text to be positioned over the image */
+        top: 60%; /* Center the text vertically */
+        left: 49%; /* Center the text horizontally */ 
+        transform: translate(-50%, -50%);
+    }
+
+    .fourth-text-overlay-one{
+        position: absolute; /* Allows the text to be positioned over the image */
+        bottom: 50%; /* Center the text vertically */
+        left: 49%; /* Center the text horizontally */ 
+        transform: translate(-50%, -50%); 
+    }
+    .fourth-text-overlay-one h2{
+        margin-top: 5px;
+    }
+
+    .fourth-text-overlay-two{
+        bottom: 7%; /* Center the text vertically */
+        left: 49%; /* Center the text horizontally */ 
+    }
+
+    .sixth-text-overlay-one{
+       
+        bottom: 60%; /* Center the text vertically */
+        left: 49%; /* Center the text horizontally */ 
+        
+    }
+
+    .sixth-text-overlay-two{
+        top: 56%; 
+        left: 49%;
+    }
+
+    .sixth-text-overlay-two h2{
+        margin-top: 5px;
+    }
+    
+    .sixth-text-overlay-one h2{
+       
+        margin-top: 5px;
+        
+    }
+
+    .fifth-button-one, .fourth-button-one{
+        bottom: 8%; 
+        left: 30%;
+    }
+
+    .fifth-button-two{
+        top: 35%; 
+        left: 30%;
+    }
+
+    .fourth-button-two{
+        top: 15%; 
+        left: 30%;
+    }
+
+    .sixth-button-one{
+        top: 15%; 
+        left: 30%;
+    }
+
+    .sixth-button-two{
+        top: 65%;
+        left: 25%;
+    }
+
+    header{
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+
+    .burger{
+        position: relative;
+        display: flex;
+    }
+
+    .apple-logo{
+        position: absolute;
+        left: 5%;;
+    }
+
+    .right-icons{
+        position: absolute;
+        display: flex;
+        gap: 1rem;
+        right: 7%;
+        
+    }
+
+    .burger-menu{
+        font-size: 20px;
+        font-weight: 600;
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    .burger-menu a{
+        margin-bottom: 5px;
+    }
+
+
+    .burger-menu img{
+        display: flex;
+    }
+
+   
+
+    .burger-menu.active {
+        display: flex;
+      }
+
+
+    .strbtn{
+        display: none;
+    }
+
+    .footer-container{
+        
+        margin-left: 0px;
+        margin-right: 0px;         
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .quick-links{
+        display: none;
+    }
+
+    .mobile-links{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    select{
+        color:#2d2d2d;
+        padding: 10px;
+        background-color: #f8f8f8;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+
+    }
+
+   
 }

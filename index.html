@@ -11,7 +11,7 @@
 </head>
 <body>
     <header id="header">
-        <nav class="nav-bar">
+        <nav class="burger-menu" id="navLinks">
             <img src="images/icons8-apple-logo-16.png">
             <a href="#">Store</a>
             <a href="#">Mac</a>
@@ -28,6 +28,18 @@
             <a href="#"><img src="images/shopping-bag.png" height="20px" width="20px"></a>
 
         </nav>
+
+        <div class="burger" onclick="toggleMenu()">
+            <div class="apple-logo">
+                <img src="images/icons8-apple-logo-16.png">
+            </div>
+            <div class="right-icons">
+            <a href="#"><img src="images/find.png" height="16px" width="16px"></a>
+            <a href="#"><img src="images/shopping-bag.png" height="25px" width="25px"></a>
+            <img src="images/lines.png" height="25px" width="18px" alt="burger-icon">
+            </div>
+        </div>
+
     </header>
     <div class="home">
     <div class="main-banner">
@@ -420,6 +432,42 @@
                 </ul>
             </div>
         </div>
+
+       <div class="mobile-links">
+        <select>
+            <option selected>Shop and Learn</option>
+        </select>
+        <select>
+            <option selected>Apple wallet</option>
+        </select>
+        <select>
+            <option selected>Account</option>
+        </select>
+        <select>
+            <option selected>Entertainment</option>
+        </select>
+        <select>
+            <option selected>Apple Store</option>
+        </select>
+        <select>
+            <option selected>For Business</option>
+        </select>
+        <select>
+            <option selected>For Education</option>
+        </select>
+        <select>
+            <option selected>For Healthcare</option>
+        </select>
+        <select>
+            <option selected>For Government</option>
+        </select>
+        <select>
+            <option selected>Apple Values</option>
+        </select>
+        <select>
+            <option selected>About Apple</option>
+        </select>
+       </div>
         <div style="margin-left: 2.4rem; margin-top: 1.5rem;">More ways to shop: <a style="color: rgb(0, 108, 223); text-decoration-line: underline;">Find an Apple Store</a> or <a style="color: rgb(0, 108, 223); text-decoration-line: underline;">other retailer</a> near you. Or call 1-800-MY-APPLE.</div>
         <div style="margin-top: 1.4rem; padding-left: 2.4rem;"> 
             <hr>
@@ -432,7 +480,10 @@
 
     <script>
 
-
+function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+  }
 
 const slides = document.querySelectorAll('.carousel-slide');
 const container = document.querySelector('.carousel-container');
